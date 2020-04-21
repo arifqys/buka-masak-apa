@@ -1,0 +1,41 @@
+.modal {
+    margin: 10px;
+}
+.modal h2 {
+    margin-bottom: 0;
+}
+.label {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.7em;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.modal img {
+    max-width: 100%;
+    display: block;
+    margin: 10px 0;
+}
+.modal h3 {
+    margin-bottom: 0;
+}
+.modal ul {
+    margin: 0;
+}
+.modal li {
+    font-size: 0.8em;
+}
+.button {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
+.button a {
+    color: #4285f4;
+    text-decoration: none;
+}
+.button a:hover {
+
+    text-decoration: underline;
+}

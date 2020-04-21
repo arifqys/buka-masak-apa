@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap');
+
+body {
+  background: #ecf0f3;
+  font-family: 'Manrope', sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 900px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.illustration {
+  position: absolute;
+  right: -50px;
+  width: 400px;
+  z-index: -10;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+/* Input */
+
+input {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+input:focus {
+  box-shadow:  20px 20px 60px #c9cccf, 
+              -20px -20px 60px #ffffff;
+}
+
+button[type="submit"] {
+  background: #55b9f3;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow:  20px 20px 60px #c9cccf, 
+              -20px -20px 60px #ffffff;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+/* Box */
+
+.flex {
+  margin: 50px 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.box {
+  border-radius: 50px;
+  background: #ecf0f3;
+  box-shadow:  20px 20px 60px #c9cccf, 
+              -20px -20px 60px #ffffff;
+  margin: 20px 10px;
+  transition: 0.3s;
+  display: flex;
+}
+
+.box:hover {
+  background: #55b9f387;
+  box-shadow:  20px 20px 60px #489ecf40, 
+              -20px -20px 60px #62d5ff40;
+  cursor: pointer;
+}
+
+.box div {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.box div h2 {
+  font-size: 1em;
+  display: inline;
+  margin: 0;
+  padding: 0 40px 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px 0 0 50px;
 }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    margin: 0 10px;
+  }
+  
+  .illustration {
+    display: none;
+  }
+
+  input {
+    font-size: 1em;
+  }
+
+  button[type="submit"] {
+    font-size: 1em;
+  }
+
+}
+
