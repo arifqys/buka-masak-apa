@@ -8,10 +8,14 @@ import styles from './Modal.module.css'
 
 const StyledPopup = styled(Popup)`
   &-content {
-    width: 60% !important;
-    max-height: 650px;
     overflow-y: auto;
     border-radius: 10px;
+  }
+  @media (max-width: 500px) {
+    &-content {
+        width: 90% !important;
+        max-height: 80% !important;
+    }
   }
 `
 

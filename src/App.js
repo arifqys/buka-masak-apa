@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {FiSearch} from 'react-icons/fi'
 import './App.css';
 import Illustration from './illustration.png';
 
@@ -52,7 +53,7 @@ const App = () => {
       <h1>buka <span className="text-bold">masak</span> apa</h1>
       <form onSubmit={onSubmitHandler}>
         <input placeholder="Masukkan kata kunci" value={value} onChange={e => setValue(e.target.value)}></input>
-        <button type="submit">Cari</button>
+        <button type="submit"><span className="icon"><FiSearch /> </span><span className="text">Cari</span></button>
       </form>
       {content}
     </div>
